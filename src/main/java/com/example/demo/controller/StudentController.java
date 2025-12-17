@@ -2,4 +2,7 @@ package com.example.demo.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 
-@Rest
+@RestController
+public class StudentController {
+    
+}
