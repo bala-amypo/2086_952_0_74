@@ -3,8 +3,12 @@ package com.example.demo.entity;
 import java.time.LocalDate;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
 @Entity
 public class Student {
+    @Id
+    @GeneratedValue(strategy=GenerationType.)
     private Long id;
     private String name;
     private String dept;
