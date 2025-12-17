@@ -23,18 +23,20 @@ public class Student {
     public String getDept(){
         return dept;
     }
-    public void setDeptString dept){
+    public void setDept(String dept){
         this.dept=dept;
     }
-    public LocalDate getdob(){
+    public LocalDate getDob(){
         return dob;
     }
-    public float getcgpa(){
+    public void setDob(LocalDate dob){
+        this.dob=dob;
+    }
+
+    public float getCgpa(){
         return cgpa;
     }
     public void setCgpa(float cgpa){
         this.cgpa=cgpa;
-    }
-
     }
 }
