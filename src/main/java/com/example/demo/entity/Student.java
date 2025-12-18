@@ -1,7 +1,7 @@
 package com.example.demo.entity;
 
 import java.time.LocalDate;
-
+import jakarta.validation.constraints.NotBlank;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -16,7 +16,6 @@ public class Student {
     private String name;
     private String dept;
     private LocalDate dob;
-    @Size(min=3,max=10,message="Number should be between 3 to 10")
     private float cgpa;
     public Long getId(){
         return id;
