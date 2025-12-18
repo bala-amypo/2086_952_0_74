@@ -28,7 +28,7 @@ public class StudentController {
     @GetMapping("/getById/{id}")
     public Optional<Student> getId(@PathVariable Long id){
         return stdser.getById(id);
-        
+
     }
     @PutMapping("/update/{id}m")
     public String update(@PathVariable Long id, @RequestBody Student st){
@@ -38,5 +38,6 @@ public class StudentController {
     @DeleteMapping("/delete/{id}")
     public String delete(@PathVariable Long id){
         return stdser.deleteData(id);
+        
     }
 }
