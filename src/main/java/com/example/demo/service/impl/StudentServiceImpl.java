@@ -29,7 +29,11 @@ public class StudentServiceImpl implements StudentService{
         boolean status=stdrepo.existById(id);
         if(status){
             st.setId(id);
-            stdrepo.
+            stdrepo.save(st);
+            return "Student updated successfully";
+        }
+        else{
+            return "Student with ID"+id+" not found";
         }
     }
 }
