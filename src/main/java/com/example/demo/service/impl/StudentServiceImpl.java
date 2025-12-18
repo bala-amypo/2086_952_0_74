@@ -17,6 +17,6 @@ public class StudentServiceImpl implements StudentService{
     }
     @Override
     public Student getById(Long id){
-        stdrepo
+        Optional<Student> student=stdrepo.finallyId(id)
     }
 }
