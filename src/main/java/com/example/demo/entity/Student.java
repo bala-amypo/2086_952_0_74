@@ -14,6 +14,7 @@ public class Student {
     @NotBlank(message="Name should not be null")
     private String name;
     private String dept;
+    
     private LocalDate dob;
     private float cgpa;
     public Long getId(){
