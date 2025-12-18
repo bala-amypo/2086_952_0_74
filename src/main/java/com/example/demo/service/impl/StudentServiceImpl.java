@@ -28,7 +28,8 @@ public class StudentServiceImpl implements StudentService{
     public String updateData(Long  id, Student st){
         boolean status=stdrepo.existById(id);
         if(status){
-            
+            st.setId(id);
+            stdrepo.
         }
     }
 }
