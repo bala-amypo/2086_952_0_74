@@ -1,12 +1,11 @@
 package com.example.demo.entity;
 
 import java.time.LocalDate;
-import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.*;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
-import jakarta.;
-
+import jakarta.persistence.Id;
 @Entity
 public class Student {
     @Id
@@ -27,6 +26,7 @@ public class Student {
         return name;
     }
     public void setName(String name){
+    
         this.name=name;
     }
     public String getDept(){
