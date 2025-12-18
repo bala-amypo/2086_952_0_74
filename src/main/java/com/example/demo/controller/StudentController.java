@@ -16,5 +16,9 @@ public class StudentController {
     public Student addStudent(@RequestBody Student st){
         return stdser.poststudent(st);
     }
-    
+    @GetMapping("/getById/{id}")
+    public Optional<Student> getId(@PathVariable Long id){
+        return stdser.getById(id);
+
+    }
 }
