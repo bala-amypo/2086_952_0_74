@@ -8,4 +8,5 @@ public class PasswordNotMatchCri extends RuntimeException{
 
 if(pass.length()<8){
     throw new PasswordNotMatchCri("Password should have 8 char");
+    
 }
