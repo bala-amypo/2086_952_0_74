@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class GlobalExceptionHandler{
     @ExceptionHandler(MethodArgumentNotValidException.class)
     public ResponseEntity<?> hello(MethodArgumentNotValidException ex){
-        Map<String,String>
+        Map<String,String> map=new HashMap<>();
     }
 
     @ExceptionHandler(PasswordNotMatchCri.class)
