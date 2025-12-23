@@ -9,5 +9,3 @@ import com.example.demo.entity.Student;
 public interface StudentRepository extends JpaRepository<Student,Long> {
     
 }
-
-
